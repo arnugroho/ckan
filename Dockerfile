@@ -3,9 +3,11 @@ FROM debian:stretch
 MAINTAINER Open Knowledge
 
 # Install required system packages
-RUN apt-get -q -y update \
-    && DEBIAN_FRONTEND=noninteractive apt-get -q -y upgrade \
-    && apt-get -q -y install \
+# RUN apt-get -q -y update
+
+   # && DEBIAN_FRONTEND=noninteractive apt-get -q -y upgrade \
+   # && \
+    RUN apt-get apt-get -q -y install \
         python-dev \
         python-pip \
         python-virtualenv \
